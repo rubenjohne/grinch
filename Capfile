@@ -15,16 +15,15 @@ require 'capistrano/deploy'
 #   https://github.com/capistrano/rails/tree/master/assets
 #   https://github.com/capistrano/rails/tree/master/migrations
 #
-# require 'capistrano/rvm'
-# require 'capistrano/rbenv'
-# require 'capistrano/chruby'
-# require 'capistrano/bundler'
-# require 'capistrano/rails/assets'
-# require 'capistrano/rails/migrations'
+require 'capistrano/rvm'
+require 'capistrano/rbenv'
+require 'capistrano/chruby'
+require 'capistrano/bundler'
+require 'capistrano/rails/assets'
+require 'capistrano/rails/migrations'
 
 
-# Require everything (bundler, rails/assets and rails/migrations)
-require 'capistrano/rails'
+
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
 Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }

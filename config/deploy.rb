@@ -1,10 +1,10 @@
 set :application, 'grinch'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :repo_url, 'git@github.com:rubenjohne/grinch.git'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
-# set :deploy_to, '/var/www/my_app'
-# set :scm, :git
+set :deploy_to, '/var/www/#{application}'
+set :scm, :git
 
 # set :format, :pretty
 # set :log_level, :debug
